@@ -1,0 +1,208 @@
+.header{
+  &__top{
+    background: #f9f9f9;
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+  }
+  &__top-list{
+    padding: 0;
+    list-style: none;
+    color: #777;
+    &__item-address{
+      position: relative;
+      padding-left: 20px;
+      &::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background-image: url('../../img/location.svg');
+        background-size: cover;
+        width: 14px;
+        height: 14px;
+      }
+    }
+    &__item-link{
+      display: inline-block;
+      border-bottom: 1px dashed;
+      color: #000;
+      transition: all .2s;
+      font-size: 1.1em;
+      &:hover{
+        color: var(--main-green);
+      }
+    }
+  }
+  &__main{
+    padding: 24px 0;
+  }
+  &__main-left{
+    flex: 0 0 70%;
+  }
+  &__main-dropdown{
+    position: relative;
+    color: #777;
+    &__selected{
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+    &__selected-img{
+      width: 24px;
+      margin-right: 6px;
+    }
+    &__selected-text{
+      font-weight: 300;
+      position: relative;
+      padding-right: 15px;
+      &::after{
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background-image: url('../../img/arrow-down.svg');
+        width: 10px;
+        height: 10px;
+      }
+    }
+  }
+  &__main-dropdown-content{
+    position: absolute;
+    top: 170%;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 6px 12px rgb(0, 0, 0);
+    border-radius: 4px;
+    padding: 24px 16px 22px 16px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .2s;
+    &.active{
+      opacity: 1;
+      visibility: visible;
+    }
+    &__title{
+      font-weight: 300;
+      font-size: 1.1em;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    &__list{
+      padding: 0;
+      list-style: none;
+      display: flex;
+      align-items: center;
+    }
+    &__list-item{
+      cursor: pointer;
+      padding: 14px;
+      display: flex;
+      align-items: center;
+      flex-grow: 1;
+      width: 140px;
+      justify-content: center;
+      &.active{
+        background: #eee;
+      }
+      &__img{
+        width: 24px;
+        margin-right: 12px;
+      }
+    }
+  }
+  &__main-phone{
+    &__link{
+      font-size: 1.3em;
+      text-decoration: none;
+      font-weight: 500;
+      margin-right: 32px;
+    }
+    &__button{
+      font-size: 11px;
+      color: var(--main-green);
+      transition: all .2s;
+      &:hover{
+        color: #000;
+      }
+    }
+  }
+  &__main-cart{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    &__img{
+      position: relative;
+      padding: 16px;
+      margin-right: 18px;
+      img{
+        width: 24px;
+        height: 24px;
+      }
+    }
+    &__img-num{
+      transform: translate(50%, 0);
+      position: absolute;
+      top: 0;
+      right: 0;
+      border-radius: 50%;
+      background: var(--main-green);
+      color: #fff;
+      padding: 1px 8px;
+    }
+    &__content-title{
+      font-weight: 500;
+      font-size: 1.1em;
+    }
+  }
+  &__nav{
+    background: var(--main-green);
+  }
+  &__nav-list{
+    color: #fff;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    height: 100%;
+    &__item{
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      a{
+        display: inline-block;
+        padding: 16px 42px;
+        text-decoration: none;
+        transition: all .2s;
+        &:hover{
+          background: rgba(255, 255, 255, .1);
+        }
+      }
+    }
+  }
+  &__nav-search{
+    &.active{
+      flex-grow: 1;
+      .header__nav-search__input{
+        max-width: 10000px;
+        opacity: 1;
+      }
+    }
+    &__input{
+      margin: 0;
+      width: calc(100% - 64px);
+      height: 100%;
+      padding: 16px;
+      transition: all .3s;
+      max-width: 0px;
+      opacity: 0;
+    }
+    &__submit{
+      padding: 16px;
+      img{
+        width: 18px;
+        height: 18px;
+      }
+    }
+  }
+}

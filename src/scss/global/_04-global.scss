@@ -15,7 +15,11 @@ body {
 	position: relative;
 }
 
-body {}
+body {
+	font-family: 'Rubik', sans-serif;
+	font-size: 14px;
+	line-height: 1.5;
+}
 
 ul,
 ol,
@@ -37,6 +41,13 @@ input:focus {
 
 button {
 	@include no-btn;
+}
+address{
+	font-style: normal;
+}
+
+a{
+	color: inherit;
 }
 
 .flex {
@@ -67,4 +78,22 @@ button {
 
 .--align-end {
 	align-items: flex-end;
+}
+
+.container{
+	margin: 0 auto;
+	width: 90%;
+	max-width: 1140px;
+}
+
+.logo{
+	&__img{
+		max-width: 62px;
+	}
+	&__text{
+		font-weight: 300;
+		color: #888;
+		margin-left: 28px;
+	}
+
 }
