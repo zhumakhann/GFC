@@ -1,0 +1,93 @@
+.product{
+  max-width: 320px;
+  list-style: none;
+  border: 1px solid #e4e8eb;
+  background: #fff;
+  padding: 24px;
+  &__img{
+    display: block;
+    margin: 0 auto;
+    max-width: 200px;
+    img{
+      max-width: 100%;
+    }
+  }
+  &__title{
+    text-decoration: none;
+    display: block;
+    padding: 5px 0;
+    color: #000;
+    font-size: 1.15em;
+  }
+  &__descr{
+    color: #999;
+    font-size: 0.85em;
+    margin-bottom: 8px;
+  }
+  &__price-value{
+    font-weight: 500;
+    font-size: 1.5em;
+  }
+  &__price-points{
+    &__value{
+      font-weight: 500;
+      font-size: 1.5em;
+      margin-right: 8px;
+      line-height: 1;
+    }
+    &__text{
+      color: #737373;
+      font-size: 9px;
+      line-height: 1;
+      span{
+        font-size: 1.45em;
+        display: block;
+        line-height: 1;
+      }
+    }
+  }
+  &__discount{
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    color: #1BB593;
+  }
+  &__discount-text{
+    line-height: 1;
+    margin-bottom: 6px;
+
+  }
+  &__discount-button{
+    padding: 6px;
+    width: 100%;
+    background-color: #1BB593;
+    color: #fff;
+    border-radius: 8px 8px 0 0;
+    font-weight: 500;
+  }
+  &__button{
+    border-radius: 42px;
+    background: #607f75;
+    padding: 5px 4px;
+    
+  }
+  &__button-add{
+    flex: 0 0 60%;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  &__button-count{
+    background-color: #fff;
+    border-radius: 34px;
+    padding: 5px 10px;
+    flex: 0 1 30%;
+    font-weight: 500;
+    &__item{
+      font-size: 1.4em;
+    }
+    span{
+      margin: 0 15px;
+
+    }
+  }
+}

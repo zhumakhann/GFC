@@ -1,0 +1,27 @@
+.popular{
+  &__title{
+    margin-bottom: 24px;
+  }
+  .splide{
+    &__pagination{
+      position: static;
+      margin: 0 auto;
+      transform: translate(0, 0);
+      &__page{
+        margin: 12px;
+        background: #000;
+        height: 4px;
+        width: 50px;
+        border-radius: 0;
+        background: #000;
+        opacity: .2;
+        transition: all .2s;
+        &.is-active{
+          opacity: 1;
+          transform: scale(1);
+          background: #607f75;
+        }
+      }
+    }
+  }
+}
