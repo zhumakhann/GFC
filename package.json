@@ -6,6 +6,7 @@
 	"devDependencies": {
 		"@babel/core": "^7.12.10",
 		"@babel/preset-env": "^7.12.11",
+		"@splidejs/splide": "^2.4.21",
 		"browser-sync": "^2.26.13",
 		"fs": "^0.0.1-security",
 		"gulp": "^4.0.2",
@@ -32,6 +33,7 @@
 		"gulp-uglify-es": "^2.0.0",
 		"imagemin-jpeg-recompress": "^7.0.0",
 		"imagemin-pngquant": "^9.0.1",
+		"swiper": "^6.6.1",
 		"vinyl-ftp": "^0.6.1"
 	},
 	"dependencies": {

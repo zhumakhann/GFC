@@ -1,0 +1,45 @@
+.banners{
+  &__slider{
+    margin: 25px 0;
+    width: 100%;
+    height: 420px;
+  }
+  &__slide{
+    position: relative;
+    padding: 64px 96px;
+  }
+  &__slide-img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -1;
+    max-width: 100%;
+  }
+  &__slide-top{
+    text-transform: uppercase;
+    font-size: .85em;
+    margin-bottom: 1rem;
+  }
+  &__slide-title{
+    max-width: 50%;
+    font-weight: 300;
+    font-size: 2.3em;
+    margin-bottom: 1.3em;
+  }
+  &__slide-button{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1rem 1.65rem;
+    font-size: 0.85em;
+    transition: all .2s;
+    font-weight: 300;
+    background: #607f75;
+    color: #fff;
+    &:hover{
+      background: #669485;
+    }
+  }
+}

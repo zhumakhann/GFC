@@ -31,9 +31,12 @@ const {
 	strict
 } = require('assert');
 
-const js_plugins = [];
+const js_plugins = [
+	'node_modules/@splidejs/splide/dist/js/splide.min.js',
+];
 const css_plugins = [
-	'node_modules/normalize.css/normalize.css'
+	'node_modules/normalize.css/normalize.css',
+	'node_modules/@splidejs/splide/dist/css/splide.min.css'
 ];
 
 let settings_size = {
