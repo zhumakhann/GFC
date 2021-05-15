@@ -3,7 +3,9 @@ document.addEventListener('DOMContentLoaded', () => {
     type   : 'loop',
     perPage: 1,
     gap: 20,
-    arrows: false
+    arrows: false,
+    pagination: false,
+
   } ).mount();
 
   new Splide( '#popular', {

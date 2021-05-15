@@ -1,0 +1,34 @@
+.footer{
+  padding: 50px 0;
+  &__top-item{
+    flex: 0 0 23%;
+    &__title{
+      font-weight: 500;
+      color: #3c3c3c;
+      font-size: 1.5em;
+      margin-bottom: 24px;
+    }
+    &__text{
+      margin-bottom: 1rem;
+      color: #a2a2a2;
+    }
+    &__links-item{
+      display: block;
+      color: #a2a2a2;
+      text-decoration: none;
+      &.img{
+        img{
+          height: 36px;
+          width: 36px;
+        }
+      }
+    }
+  }
+  &__bottom-item{
+    color: #a2a2a2;
+    margin-right: 24px;
+    a{
+      text-decoration: none;
+    }
+  }
+}
