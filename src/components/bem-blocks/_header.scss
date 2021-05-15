@@ -1,4 +1,7 @@
 .header{
+  &__mobile{
+    display: none;
+  }
   &__fixed{
     transform: translateY(-150%);
     position: fixed;

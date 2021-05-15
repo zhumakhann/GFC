@@ -1,4 +1,76 @@
 <header class="header">
+  <div class="header__mobile-nav">
+    <div class="header__mobile-nav__top flex --align-center --just-space">
+      <h3 class="header__mobile-nav__top-title">
+        Добро пожаловать
+      </h3>
+      <button class="header__mobile-nav__top-close">
+        <svg width="14px" height="14px" viewBox="0 0 329.26933 329" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0" />
+          </svg>
+
+      </button>
+    </div>
+    <nav class="header__mobile-nav__list">
+      <a class="header__mobile-nav__list-item" href="#">Войти</a>
+      <a class="header__mobile-nav__list-item" href="#">Зарегистрироваться</a>
+      <a class="header__mobile-nav__list-item" href="#">Главная</a>
+      <a class="header__mobile-nav__list-item" href="#">Товары</a>
+      <a class="header__mobile-nav__list-item" href="#">Контакты</a>
+    </nav>
+    <div class="header__mobile-nav__select flex --just-space">
+      <a class="header__mobile-nav__select-item active" href="#">
+        <img src="../../img/kz.svg" alt="">
+      </a>
+      <a class="header__mobile-nav__select-item" href="#">
+        <img src="../../img/ru.svg" alt="">
+      </a>
+    </div>
+  </div>
+  <div class="header__mobile">
+    <div class="container">
+      <div class="header__mobile-wrapper flex --align-center --just-space">
+        <div class="logo">
+          <img class="logo__img" src="../../img/logo.png" alt="">
+        </div>
+        <div class="header__mobile-icons flex --align-center">
+          <a class="header__mobile-cart flex --align-center" href="#">
+            <img class="header__mobile-cart__img" src="../../img/bag.svg" alt="">
+            <span class="header__mobile-cart__text">3 / 8970 тг.</span>
+            <span class="header__mobile-cart__count">1</span>
+          </a>
+          <button class="header__mobile-search">
+            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+              <path fill="#fff" d="M225.474,0C101.151,0,0,101.151,0,225.474c0,124.33,101.151,225.474,225.474,225.474
+                c124.33,0,225.474-101.144,225.474-225.474C450.948,101.151,349.804,0,225.474,0z M225.474,409.323
+                c-101.373,0-183.848-82.475-183.848-183.848S124.101,41.626,225.474,41.626s183.848,82.475,183.848,183.848
+                S326.847,409.323,225.474,409.323z" />
+              <path fill="#fff"
+                d="M505.902,476.472L386.574,357.144c-8.131-8.131-21.299-8.131-29.43,0c-8.131,8.124-8.131,21.306,0,29.43l119.328,119.328
+                  c4.065,4.065,9.387,6.098,14.715,6.098c5.321,0,10.649-2.033,14.715-6.098C514.033,497.778,514.033,484.596,505.902,476.472z" />
+            </svg>
+          </button>
+          <button class="header__mobile-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+      <div class="header__mobile-form">
+        <div class="container">
+          <form class="flex --align-str" action="#">
+            <input type="text" class="header__mobile-form__input" placeholder="Поиск...">
+            <button class="header__mobile-form__submit">Поиск</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.header__mobile -->
+
   <div class="header__fixed">
     <div class="container">
       <div class="header__fixed-wrapper flex --just-space --align-center">
