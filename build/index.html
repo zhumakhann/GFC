@@ -21,6 +21,37 @@
 
 <body>
 	<header class="header">
+  <div class="header__fixed">
+    <div class="container">
+      <div class="header__fixed-wrapper flex --just-space --align-center">
+        <div class="header__fixed-left flex --align-center">
+          <div class="logo">
+            <img class="logo__img" src="../../img/logo.png" alt="">
+          </div>
+          <nav class="header__fixed-nav">
+            <a class="header__fixed-nav__item" href="#">ГЛАВНАЯ</a>
+            <a class="header__fixed-nav__item" href="#">ТОВАРЫ</a>
+            <a class="header__fixed-nav__item" href="#">КОНТАКТЫ</a>
+          </nav>
+        </div>
+        <div class="header__fixed-nav flex --align-center">
+          <a href="#" class="header__fixed-nav__item img cart cart-fixed">
+            <div class="header__main-cart__img cart__img">
+              <span class="header__main-cart__img-num cart__img-num">
+                1
+              </span>
+              <img src="../../img/bag.svg" alt="Изображение корзины">
+            </div>
+          </a>
+          <a class="header__fixed-nav__item img" href="#">
+            <img src="../../img/user.svg" alt="">
+          </a>
+        </div>
+
+      </div>
+      <!-- /.header__fixed-wrapper -->
+    </div>
+  </div>
   <div class="header__top">
     <div class="container">
       <ul class="header__top-list flex --just-space --align-center">
@@ -83,9 +114,9 @@
             <button class="header__main-phone__button">ЗАКАЗАТЬ ЗВОНОК</button>
           </div>
         </div>
-        <a href="#" class="header__main-cart">
-          <div class="header__main-cart__img">
-            <span class="header__main-cart__img-num">
+        <a href="#" class="header__main-cart cart">
+          <div class="header__main-cart__img cart__img">
+            <span class="header__main-cart__img-num cart__img-num">
               1
             </span>
             <img src="../../img/cart.svg" alt="Изображение корзины">
@@ -118,9 +149,9 @@
             <a href="#">Контакты</a>
           </li>
         </ul>
-        <form action="#" class="header__nav-search">
+        <form action="#" class="header__nav-search flex --just-space">
           <label class="header__nav-search__label">
-            <input class="header__nav-search__input" type="text">
+            <input class="header__nav-search__input" type="text" placeholder="Найти...">
           </label>
           <button class="header__nav-search__submit">
             <img src="../../img/search.svg" alt="search">
