@@ -1,0 +1,26 @@
+.benefits{
+  &__title{
+    margin-bottom: 48px;
+  }
+  &__list{
+    display: flex;
+    padding: 0;
+    list-style: none;
+    flex-wrap: wrap;
+  }
+  &__list-item{
+    flex: 1 0 33.333%;
+    min-width: 300px;
+    padding: 36px;
+    text-align: center;
+    &__img{
+      width: 56px;
+      height: 56px;
+    }
+    &__text{
+      margin-top: 36px;
+      font-size: 1.2em;
+      font-weight: 400;
+    }
+  }
+}
