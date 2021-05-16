@@ -8,6 +8,7 @@ const headerMobileNavClose = headerMobileNav.querySelector('.header__mobile-nav_
 const headerMobileSearch = header.querySelector('.header__mobile-search')
 const headerMobileSearchForm = header.querySelector('.header__mobile-form')
 
+const productsNavTitle = document.querySelector('.products__nav-title')
 
 function scrollHandler(){
   const fixedHeader = header.querySelector('.header__fixed')
@@ -20,6 +21,14 @@ function scrollHandler(){
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+
+
+  productsNavTitle.addEventListener('click', () => {
+    const productsNavList = document.querySelector('.products__nav-list')
+    productsNavList.classList.toggle('active');
+    productsNavTitle.classList.toggle('active');
+  })
+
   headerDropdownBtn.addEventListener('click', () => {
     headerDropdownContent.classList.toggle('active')
   })

@@ -1,0 +1,17 @@
+.breadcrumbs{
+  list-style: none;
+  padding: 0;
+
+  &__item-link{
+    color: #607f75;
+    text-decoration: none;
+  }
+  &__item{
+    &:not(:first-child){
+      &::before{
+        content: "»";
+        padding-left: 5px;
+      }
+    }
+  }
+}
