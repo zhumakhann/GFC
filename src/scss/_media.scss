@@ -251,6 +251,25 @@
       max-width: 100%;
     }
   }
+  .contact{
+    &__top{
+      flex-direction: column;
+      padding: 18px 0;
+    }
+    &__wrapper{
+      flex-wrap: wrap;
+    }
+    &__map,
+    &__content{
+      flex: 0 0 100%;
+    }
+    &__map{
+      height: 400px;
+    }
+    &__content{
+      padding: 21px;
+    }
+  }
 }
 
 //!MEDIA: 991
