@@ -1,0 +1,39 @@
+.aside {
+  padding: 20px;
+  width: 280px;
+  margin: 0 24px 24px 0;
+  border: 1px solid #e4e8eb;
+
+  &__title {
+    display: none;
+  }
+
+  &__list {
+    padding: 0;
+    list-style: none;
+
+
+  }
+
+  &__list-item {
+    &__button {
+      width: 100%;
+      font-size: 1.15em;
+      line-height: 2;
+      color: #555;
+      background: #eee;
+      transition: 0.3s;
+      padding: 12px 20px;
+      margin-bottom: 6px;
+      border-radius: 4px;
+
+      &:hover {
+        background: #f9f9f9;
+        color: #607f75;
+      }
+
+      text-align: left;
+
+    }
+  }
+}

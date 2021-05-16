@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, initial-scale=1.0">
+	<meta name="description"
+				content="Easy webdev startpack by budfy">
+	<meta name="keywords"
+				content="Webdev, Gulp4, html, css, js, jquery">
+	<link rel="shortcut icon"
+				href="img/favicon.png"
+				type="image/x-icon">
+	<link rel="stylesheet"
+				href="css/libs.min.css">
+	<link rel="stylesheet"
+				href="css/style.min.css">
+	<title>Easy webdev startpack - test</title>
+</head>
+
+<body>
+	<header class="header">
+  <div class="header__mobile-nav">
+    <div class="header__mobile-nav__top flex --align-center --just-space">
+      <h3 class="header__mobile-nav__top-title">
+        Добро пожаловать
+      </h3>
+      <button class="header__mobile-nav__top-close">
+        <svg width="14px" height="14px" viewBox="0 0 329.26933 329" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0" />
+          </svg>
+
+      </button>
+    </div>
+    <nav class="header__mobile-nav__list">
+      <a class="header__mobile-nav__list-item" href="#">Войти</a>
+      <a class="header__mobile-nav__list-item" href="#">Зарегистрироваться</a>
+      <a class="header__mobile-nav__list-item" href="#">Главная</a>
+      <a class="header__mobile-nav__list-item" href="#">Товары</a>
+      <a class="header__mobile-nav__list-item" href="#">Контакты</a>
+    </nav>
+    <div class="header__mobile-nav__select flex --just-space">
+      <a class="header__mobile-nav__select-item active" href="#">
+        <img src="../../img/kz.svg" alt="">
+      </a>
+      <a class="header__mobile-nav__select-item" href="#">
+        <img src="../../img/ru.svg" alt="">
+      </a>
+    </div>
+  </div>
+  <div class="header__mobile">
+    <div class="container">
+      <div class="header__mobile-wrapper flex --align-center --just-space">
+        <div class="logo">
+          <img class="logo__img" src="../../img/logo.png" alt="">
+        </div>
+        <div class="header__mobile-icons flex --align-center">
+          <a class="header__mobile-cart flex --align-center" href="#">
+            <img class="header__mobile-cart__img" src="../../img/bag.svg" alt="">
+            <span class="header__mobile-cart__text">3 / 8970 тг.</span>
+            <span class="header__mobile-cart__count">1</span>
+          </a>
+          <button class="header__mobile-search">
+            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+              <path fill="#fff" d="M225.474,0C101.151,0,0,101.151,0,225.474c0,124.33,101.151,225.474,225.474,225.474
+                c124.33,0,225.474-101.144,225.474-225.474C450.948,101.151,349.804,0,225.474,0z M225.474,409.323
+                c-101.373,0-183.848-82.475-183.848-183.848S124.101,41.626,225.474,41.626s183.848,82.475,183.848,183.848
+                S326.847,409.323,225.474,409.323z" />
+              <path fill="#fff"
+                d="M505.902,476.472L386.574,357.144c-8.131-8.131-21.299-8.131-29.43,0c-8.131,8.124-8.131,21.306,0,29.43l119.328,119.328
+                  c4.065,4.065,9.387,6.098,14.715,6.098c5.321,0,10.649-2.033,14.715-6.098C514.033,497.778,514.033,484.596,505.902,476.472z" />
+            </svg>
+          </button>
+          <button class="header__mobile-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+      <div class="header__mobile-form">
+        <div class="container">
+          <form class="flex --align-str" action="#">
+            <input type="text" class="header__mobile-form__input" placeholder="Поиск...">
+            <button class="header__mobile-form__submit">Поиск</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.header__mobile -->
+
+  <div class="header__fixed">
+    <div class="container">
+      <div class="header__fixed-wrapper flex --just-space --align-center">
+        <div class="header__fixed-left flex --align-center">
+          <div class="logo">
+            <img class="logo__img" src="../../img/logo.png" alt="">
+          </div>
+          <nav class="header__fixed-nav">
+            <a class="header__fixed-nav__item" href="#">ГЛАВНАЯ</a>
+            <a class="header__fixed-nav__item" href="#">ТОВАРЫ</a>
+            <a class="header__fixed-nav__item" href="#">КОНТАКТЫ</a>
+          </nav>
+        </div>
+        <div class="header__fixed-nav flex --align-center">
+          <a href="#" class="header__fixed-nav__item img cart cart-fixed">
+            <div class="header__main-cart__img cart__img">
+              <span class="header__main-cart__img-num cart__img-num">
+                1
+              </span>
+              <img src="../../img/bag.svg" alt="Изображение корзины">
+            </div>
+          </a>
+          <a class="header__fixed-nav__item img" href="#">
+            <img src="../../img/user.svg" alt="">
+          </a>
+        </div>
+
+      </div>
+      <!-- /.header__fixed-wrapper -->
+    </div>
+  </div>
+  <div class="header__top">
+    <div class="container">
+      <ul class="header__top-list flex --just-space --align-center">
+        <li class="header__top-list__item">
+          <address class="header__top-list__item-address">Казахстан, Алматы, ул. Жамбыла, 114, 1 этаж</address>
+        </li>
+        <li class="header__top-list__item">
+          <address class="header__top-list__item-address">Россия, Краснодар, ул. Кореновская, 1</address>
+        </li>
+        <li class="header__top-list__item">
+          <address class="header__top-list__item-address">Россия, Пермь, ул. Ленина, 39</address>
+        </li>
+        <li class="header__top-list__item">
+          <a href="#" class="header__top-list__item-link">Личный кабинет</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- /.header__top -->
+
+  <div class="header__main">
+    <div class="container">
+      <div class="header__main-wrapper flex --align-center --just-space">
+        <div class="header__main-left flex --align-center --just-space">
+
+          <div class="logo flex --align-center">
+            <img class="logo__img" src="'../../../../img/logo.png" alt="Логотип компании GFC">
+            <p class="logo__text">
+              Интернет-магазин <br>
+              представительского класса
+            </p>
+          </div>
+          <div class="header__main-dropdown">
+            <div class="header__main-dropdown__selected">
+              <img class="header__main-dropdown__selected-img" src="../../img/kz.svg" alt="Флажок">
+              <p class="header__main-dropdown__selected-text">Казахстан</p>
+            </div>
+            <div class="header__main-dropdown-content">
+              <h2 class="header__main-dropdown-content__title">
+                Выберите вашу страну
+              </h2>
+              <ul class="header__main-dropdown-content__list">
+                <li class="header__main-dropdown-content__list-item">
+                  <img class="header__main-dropdown-content__list-item__img" src="../../img/kz.svg" alt="Флажок">
+                  <p class="header__main-dropdown-content__list-item__text">
+                    Казахстан
+                  </p>
+                </li>
+                <li class="header__main-dropdown-content__list-item">
+                  <img class="header__main-dropdown-content__list-item__img" src="../../img/ru.svg" alt="Флажок">
+                  <p class="header__main-dropdown-content__list-item__text">
+                    Россия
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="header__main-phone">
+            <a class="header__main-phone__link" href="tel:+77714444144">+7 (771) 444-41-44</a>
+            <button class="header__main-phone__button">ЗАКАЗАТЬ ЗВОНОК</button>
+          </div>
+        </div>
+        <a href="#" class="header__main-cart cart">
+          <div class="header__main-cart__img cart__img">
+            <span class="header__main-cart__img-num cart__img-num">
+              1
+            </span>
+            <img src="../../img/cart.svg" alt="Изображение корзины">
+          </div>
+          <div class="header__main-cart__content">
+            <h3 class="header__main-cart__content-title">
+              Ваша корзина
+            </h3>
+            <p class="header__main-cart__content-descr">
+              1 товар на: 3990 тг.
+            </p>
+          </div>
+        </a>
+        <!-- /.header__main-left -->
+      </div>
+    </div>
+  </div>
+  <!-- /.header__main -->
+  <nav class="header__nav">
+    <div class="container">
+      <div class="header__nav-wrapper flex --align-str --just-space">
+        <ul class="header__nav-list">
+          <li class="header__nav-list__item">
+            <a href="#">Главная</a>
+          </li>
+          <li class="header__nav-list__item">
+            <a href="#">Товары</a>
+          </li>
+          <li class="header__nav-list__item">
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+        <form action="#" class="header__nav-search flex --just-space">
+          <label class="header__nav-search__label">
+            <input class="header__nav-search__input" type="text" placeholder="Найти...">
+          </label>
+          <button class="header__nav-search__submit">
+            <img src="../../img/search.svg" alt="search">
+          </button>
+        </form>
+
+      </div>
+      <!-- /.header__nav-wrapper -->
+    </div>
+  </nav>
+  <!-- /.header__nav -->
+</header>
+	<main class="main">
+    <section class="products">
+  <div class="container">
+    <div class="products__top flex --align-center --just-space">
+      <h2 class="title products__title">
+        Товары
+      </h2>
+      <ul class="breadcrumbs flex --align-center">
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__item-link" href="#">
+            Главная страница
+          </a>
+        </li>
+        <li class="breadcrumbs__item">
+          Товары
+        </li>
+      </ul>
+    </div>
+    <div class="products__wrapper flex --just-space">
+      <nav class="aside">
+  <h3 class="aside__title">
+    Категории
+  </h3>
+  <ul class="aside__list">
+    <li class="aside__list-item">
+      <button class="aside__list-item__button">
+        HealthTea коллекция фито-чаев
+      </button>
+    </li>
+    <li class="aside__list-item">
+      <button class="aside__list-item__button">
+        Авторская методика исследования клетки
+      </button>
+    </li>
+    <li class="aside__list-item">
+      <button class="aside__list-item__button">
+        Все товары
+      </button>
+    </li>
+    <li class="aside__list-item">
+      <button class="aside__list-item__button">
+        Линейка delta
+      </button>
+    </li>
+    <li class="aside__list-item">
+      <button class="aside__list-item__button">
+        Линейка GalaFITOLAB
+      </button>
+    </li>
+    <li class="aside__list-item">
+      <button class="aside__list-item__button">
+        Печатная продукция
+      </button>
+    </li>
+    <li class="aside__list-item">
+      <button class="aside__list-item__button">
+        Противопаразитарная линейка 9-11
+      </button>
+    </li>
+    <li class="aside__list-item">
+      <button class="aside__list-item__button">
+        Товары по акциям
+      </button>
+    </li>
+  </ul>
+</nav>
+
+      <section class="not-found">
+  <h2 class="title not-found__title">
+    Ничего не найдено
+  </h2>
+  <p class="not-found__text">
+    Извините, по Вашему запросу ничего не найдено. Пожалуйста измените критерии поиска и попробуйте еще раз.
+  </p>
+  <form action="#" class="not-found__form">
+    <input class="not-found__form-input" type="text">
+    <button class="not-found__form-submit">Поиск</button>
+  </form>
+</section>
+    </div>
+  </div>
+</section>
+
+	</main>
+	<footer class="footer">
+  <div class="container">
+    <div class="footer__top flex --just-space">
+      <div class="footer__top-item">
+        <h3 class="footer__top-item__title">
+          GF COMPANY
+        </h3>
+        <p class="footer__top-item__text">
+          GF COMPANY производитель и дистрибьютер уникальных препаратов на основе фитоформул. Компания осуществляет свою
+          деятельность более 18 лет и имеет сертификаты качества продукции.
+        </p>
+      </div>
+      <!-- /.footer__top-item -->
+
+      <div class="footer__top-item">
+        <h3 class="footer__top-item__title">
+          Полезные ссылки
+        </h3>
+        <nav class="footer__top-item__links">
+          <a class="footer__top-item__links-item" href="#">Акции</a>
+          <a class="footer__top-item__links-item" href="#">Доставка и оплата</a>
+          <a class="footer__top-item__links-item" href="#">Отзывы</a>
+          <a class="footer__top-item__links-item" href="#">Статьи</a>
+          <a class="footer__top-item__links-item" href="#">Производители</a>
+          <a class="footer__top-item__links-item" href="#">Контакты</a>
+        </nav>
+      </div>
+      <!-- /.footer__top-item -->
+
+      <div class="footer__top-item">
+        <h3 class="footer__top-item__title">
+          Контакты
+        </h3>
+        <address class="footer__top-item__text">
+          Казахстан, Алматы, "Бизнес-Сити", Жамбыла, 114, 1 этаж (угол Байтурсынова)
+          Пн-Сб / с 9-00 до 19-00 Вс / с 9-00 до 16-00
+        </address>
+        <address class="footer__top-item__text">
+          Россия, Краснодар, Кореновская, 1
+          Пн-Пт / с 10-00 до 18-00
+        </address>
+        <address class="footer__top-item__text">
+          Россия, Пермь, Ленина, 39
+          Пн-Пт / с 10-00 до 18-00
+        </address>
+        <address class="footer__top-item__text">
+          Телефон: +7 (771) 444-41-44
+          E-Mail: gfcom.y@gmail.com
+        </address>
+      </div>
+      <!-- /.footer__top-item -->
+
+      <div class="footer__top-item">
+        <h3 class="footer__top-item__title">
+          Социальные сети
+        </h3>
+        <nav class="footer__top-item__links flex --just-space">
+          <a href="#" class="footer__top-item__links-item img">
+            <img src="https://img.icons8.com/metro/50/000000/instagram-new.png"/>
+          </a>
+          <a href="#" class="footer__top-item__links-item img">
+            <img src="https://img.icons8.com/metro/26/000000/facebook-new--v2.png"/>
+          </a>
+          <a href="#" class="footer__top-item__links-item img">
+            <img src="https://img.icons8.com/doodle/48/000000/youtube-play--v2.png"/>
+          </a>
+        </nav>
+      </div>
+      <!-- /.footer__top-item -->
+    </div>
+    <div class="footer__bottom flex">
+      <p class="footer__bottom-item">
+        © GF Company 2021
+      </p>
+      <p class="footer__bottom-item">
+        <a href="#">
+          Политика конфиденциальности
+        </a>
+      </p>
+    </div>
+  </div>
+</footer>
+	<script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+</body>
+
+</html>

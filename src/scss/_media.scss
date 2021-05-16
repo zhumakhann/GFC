@@ -263,6 +263,51 @@
 
 //MEDIA: 639
 @media screen and (max-width: 639px) {
+  .aside{
+      padding: 0px 20px;
+      width: 100%;
+    &__title{
+      display: block;
+      text-align: center;
+      font-size: 1.5em;
+      font-weight: 500;
+      position: relative;
+      cursor: pointer;
+      transition: all .3s;
+      margin: 10px 0;
+      &::after{
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background-image: url('../img/arrow-down.svg');
+        background-size: cover;
+        width: 18px;
+        height: 18px;
+        transition: all .3s;
+      }
+      &.active{
+        &::after{
+          transform: translateY(-10px) rotate(180deg);
+        }
+      }
+    }
+    &__list{
+      max-height: 0;
+      visibility: hidden;
+      transition: max-height .3s linear;
+      &.active{
+        max-height: 1000px;
+        visibility: visible;
+      }
+    }
+  }
+  .not-found{
+    &__title{
+      font-size: 1.5rem;
+    }
+  }
   .banners{
     &__slide{
       padding: 32px 24px;
@@ -316,46 +361,7 @@
     &__wrapper{
       flex-direction: column;
     }
-    &__nav{
-      padding: 0px 20px;
-      width: 100%;
-    }
-    &__nav-title{
-      display: block;
-      text-align: center;
-      font-size: 1.5em;
-      font-weight: 500;
-      position: relative;
-      cursor: pointer;
-      transition: all .3s;
-      margin: 10px 0;
-      &::after{
-        content: "";
-        position: absolute;
-        right: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        background-image: url('../img/arrow-down.svg');
-        background-size: cover;
-        width: 18px;
-        height: 18px;
-        transition: all .3s;
-      }
-      &.active{
-        &::after{
-          transform: translateY(-10px) rotate(180deg);
-        }
-      }
-    }
-    &__nav-list{
-      max-height: 0;
-      visibility: hidden;
-      transition: max-height .3s linear;
-      &.active{
-        max-height: 1000px;
-        visibility: visible;
-      }
-    }
+   
     &__list-item{
       min-width: 260px;
     }

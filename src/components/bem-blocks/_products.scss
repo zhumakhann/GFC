@@ -1,0 +1,17 @@
+.products {
+  &__top {
+    padding: 36px 0;
+  }
+
+  &__list{
+    list-style: none;
+    padding: 0;
+    flex-wrap: wrap;
+    margin: 0 -10px 20px;
+  }
+  &__list-item{
+    flex: 1 0 calc(33.333% - 20px);
+    margin: 10px;
+    min-width: 270px;
+  }
+}
