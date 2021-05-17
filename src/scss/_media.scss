@@ -77,6 +77,7 @@
     }
   }
   .login{
+    background-image: url('../img/bg-login.jpg');
     &__wrapper{
       flex-direction: column;
     }
@@ -84,7 +85,11 @@
     &__content{
       flex: 0 0 100%;
     }
+    &__register{
+      z-index: 2;
+    }
     &__content{
+      background-color: #fff;
       margin: 24px 0;
       order: -1;
     }
@@ -430,6 +435,7 @@
     }
   }
   .login{
+    background-image: url('');
     &__content{
       padding: 0;
     }
