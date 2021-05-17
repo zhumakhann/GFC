@@ -76,6 +76,19 @@
       order: -1;
     }
   }
+  .login{
+    &__wrapper{
+      flex-direction: column;
+    }
+    &__register,
+    &__content{
+      flex: 0 0 100%;
+    }
+    &__content{
+      margin: 24px 0;
+      order: -1;
+    }
+  }
 }
 
 //!MEDIA: 1199
@@ -414,6 +427,17 @@
         width: 100%;
         margin-bottom: 0.5em;
       }
+    }
+  }
+  .login{
+    &__content{
+      padding: 0;
+    }
+    &__register{
+      padding: 48px 24px;
+    }
+    &__register-title{
+      font-size: 1.5rem;
     }
   }
   .footer{
