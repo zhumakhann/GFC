@@ -64,6 +64,18 @@
       }
     }
   }
+  .register{
+    &__wrapper{
+      flex-direction: column;
+    }
+    &__login,
+    &__content{
+      flex: 0 0 100%;
+    }
+    &__content{
+      order: -1;
+    }
+  }
 }
 
 //!MEDIA: 1199
@@ -383,6 +395,25 @@
    
     &__list-item{
       min-width: 260px;
+    }
+  }
+  .register{
+    &__login{
+      padding: 48px 24px;
+    }
+    &__content{
+      margin: 48px 0 24px;
+      padding: 20px 0;
+    }
+    &__content-form{
+      &__wrapper{
+        flex-direction: column;
+      }
+      &__item{
+        flex: 0 0 100%;
+        width: 100%;
+        margin-bottom: 0.5em;
+      }
     }
   }
   .footer{
